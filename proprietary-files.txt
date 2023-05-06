@@ -1,7 +1,9 @@
 # From lisa MIUI V14.0.3.0.TKOMIXM package
--product/priv-app/MiuiCamera/MiuiCamera.apk:system/priv-app/MiuiCamera/MiuiCamera.apk;OVERRIDES=Camera,Camera2,GoogleCameraGo
 system/lib64/libcamera_algoup_jni.xiaomi.so
 system/lib64/libcamera_mianode_jni.xiaomi.so
 system/lib64/libgui.so:system/lib64/libgui-xiaomi.so
 system/lib64/libmicampostproc_client.so
 system/lib64/vendor.xiaomi.hardware.campostproc@1.0.so
+
+# Patched MIUI Leica camera package
+-product/priv-app/MiuiCamera/MiuiCamera.apk:system/priv-app/MiuiCamera/MiuiCamera.apk;OVERRIDES=Camera,Camera2,GoogleCameraGo|ea5a8b549e054c740499ade0c6ca48adf4c05688
