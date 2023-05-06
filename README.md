@@ -1,10 +1,10 @@
 # proprietary_vendor_xiaomi_camera
 
-Prebuilt stock MIUI Camera to include in custom ROM builds.
-
-Extracted from lisa MIUI package (refer proprietary-files.txt for version).
+Prebuilt MIUI Leica Camera to include in custom ROM builds.
 
 ### Supported devices
+* POCO F4/Redmi K40S (munch)
+* POCO X3 Pro (vayu)
 * Xiaomi 11 Lite NE (lisa)
 
 ### How to use?
