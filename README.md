@@ -6,6 +6,7 @@ Prebuilt MIUI Leica Camera to include in custom ROM builds.
 * POCO F4/Redmi K40S (munch)
 * POCO X3 Pro (vayu)
 * Xiaomi 11 Lite NE (lisa)
+* Redmi Note 12 Turbo / POCO F5 (marble)
 
 ### How to use?
 
