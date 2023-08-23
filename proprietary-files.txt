@@ -6,4 +6,4 @@ system/lib64/libmicampostproc_client.so
 system/lib64/vendor.xiaomi.hardware.campostproc@1.0.so
 
 # Patched MIUI Leica camera package
--product/priv-app/MiuiCamera/MiuiCamera.apk:system/priv-app/MiuiCamera/MiuiCamera.apk;OVERRIDES=Aperture,Camera,Camera2,GoogleCameraGo|ea5a8b549e054c740499ade0c6ca48adf4c05688
+-product/priv-app/MiuiCamera/MiuiCamera.apk:system/priv-app/MiuiCamera/MiuiCamera.apk;OVERRIDES=Aperture,Camera,Camera2,GoogleCameraGo|1eb82ca99df9a4442133cdc6573491b8ca092740
