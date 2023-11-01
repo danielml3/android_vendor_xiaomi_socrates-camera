@@ -58,7 +58,7 @@ function blob_fixup() {
         system/lib64/libgui-xiaomi.so)
             patchelf --set-soname libgui-xiaomi.so "${2}"
             ;;
-        system/lib64/libcamera_algoup_jni.xiaomi.so|system/lib64/libcamera_mianode_jni.xiaomi.so)
+        system_ext/lib64/libcamera_algoup_jni.xiaomi.so|system_ext/lib64/libcamera_mianode_jni.xiaomi.so)
             patchelf --replace-needed libgui.so libgui-xiaomi.so "${2}"
             ;;
     esac
@@ -70,3 +70,5 @@ setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
 extract "${MY_DIR}/proprietary-files.txt" "${SRC}" "${KANG}" --section "${SECTION}"
 
 "${MY_DIR}/setup-makefiles.sh"
+
+split -b 20M proprietary/system/priv-app/MiuiCamera/MiuiCamera.apk proprietary/system/priv-app/MiuiCamera/MiuiCamera.part

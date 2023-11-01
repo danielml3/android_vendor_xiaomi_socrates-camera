@@ -14,6 +14,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SYSTEM_PROPERTIES += \
     persist.vendor.camera.privapp.list=org.codeaurora.snapcam,com.android.camera \
     ro.com.google.lens.oem_camera_package=com.android.camera \
+    ro.hardware.camera=xiaomi \
+    ro.miui.notch=1 \
+    ro.product.mod_device=fuxi_global \
     vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera
 
 # Sepolicy
