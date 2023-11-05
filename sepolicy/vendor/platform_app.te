@@ -1,5 +1,5 @@
 allow platform_app app_data_file:file execute;
-allow platform_app hal_xiaomi_camera_hwservice:hwservice_manager find;
+allow platform_app vendor_hal_camerapostproc_xiaomi_hwservice:hwservice_manager find;
 
 binder_call(platform_app, hal_camera_default)
 
