@@ -1,8 +1,8 @@
-# Unpinned blobs from fuxi_global-user 13 TKQ1.221114.001 V14.0.5.0.UMCMIXM release-keys
+# Unpinned blobs from fuxi_global-user 13 TKQ1.221114.001 V14.0.6.0.UMCMIXM release-keys
+product/overlay/MiuiCameraOverlayLeicaed/MiuiCameraOverlayLeicaed.apk
+product/priv-app/MiuiCamera/MiuiCamera.apk:system/priv-app/MiuiCamera/MiuiCamera.apk;OVERRIDES=Aperture,Camera,Camera2,GoogleCameraGo
 system/lib64/libgui.so:system/lib64/libgui-xiaomi.so
 system_ext/lib64/libcamera_algoup_jni.xiaomi.so:system/lib64/libcamera_algoup_jni.xiaomi.so
 system_ext/lib64/libcamera_mianode_jni.xiaomi.so:system/lib64/libcamera_mianode_jni.xiaomi.so
 system_ext/lib64/libmicampostproc_client.so:system/lib64/libmicampostproc_client.so
 system_ext/lib64/vendor.xiaomi.hardware.campostproc@1.0.so:system/lib64/vendor.xiaomi.hardware.campostproc@1.0.so
-product/overlay/MiuiCameraOverlayLeicaed/MiuiCameraOverlayLeicaed.apk
--product/priv-app/MiuiCamera/MiuiCamera.apk:system/priv-app/MiuiCamera/MiuiCamera.apk;OVERRIDES=Aperture,Camera,Camera2,GoogleCameraGo
