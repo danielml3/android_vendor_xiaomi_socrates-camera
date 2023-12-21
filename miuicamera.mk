@@ -15,13 +15,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/camera/configs/permissions/privapp-permissions-miuicamera.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-miuicamera.xml
 
 # Properties
-PRODUCT_SYSTEM_PROPERTIES += \
-    persist.vendor.camera.privapp.list=org.codeaurora.snapcam,com.android.camera \
-    ro.com.google.lens.oem_camera_package=com.android.camera \
-    ro.hardware.camera=xiaomi \
-    ro.miui.notch=1 \
-    ro.product.mod_device=fuxi_global \
-    vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera
+TARGET_SYSTEM_PROP += vendor/xiaomi/camera/configs/properties/system.prop
+PRODUCT_COPY_FILES += \
+    vendor/xiaomi/camera/configs/properties/system_camera_fuxi.prop:$(TARGET_COPY_OUT_SYSTEM)/etc/build_camera_fuxi.prop \
+    vendor/xiaomi/camera/configs/properties/system_camera_nuwa.prop:$(TARGET_COPY_OUT_SYSTEM)/etc/build_camera_nuwa.prop
 
 # Sepolicy
 BOARD_VENDOR_SEPOLICY_DIRS += \
