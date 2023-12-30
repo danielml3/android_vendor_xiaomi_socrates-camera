@@ -6,7 +6,8 @@
 
 # Overlays
 PRODUCT_PACKAGES += \
-    MiuiCameraOverlay
+    MiuiCameraOverlayIcon \
+    MiuiCameraOverlayLeicaed
 
 # Permissions
 PRODUCT_COPY_FILES += \
