@@ -4,6 +4,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+CAMERA_PACKAGE_NAME := com.android.camera
+
 # Overlays
 PRODUCT_PACKAGES += \
     MiuiCameraOverlayIcon \
