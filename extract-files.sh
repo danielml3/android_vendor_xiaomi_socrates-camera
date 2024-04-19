@@ -8,7 +8,7 @@
 
 set -e
 
-DEVICE=camera
+DEVICE=socrates-camera
 VENDOR=xiaomi
 
 # Load extract_utils and do some sanity checks
@@ -62,12 +62,13 @@ function blob_fixup() {
             patchelf --replace-needed libgui.so libgui-xiaomi.so "${2}"
             ;;
         system/priv-app/MiuiCamera/MiuiCamera.apk)
-            tmp_dir="${EXTRACT_TMP_DIR}/MiuiCamera"
-            $APKTOOL d -q "$2" -o "$tmp_dir" -f
-            grep -rl "com.miui.gallery" "$tmp_dir" | xargs sed -i 's|"com.miui.gallery"|"com.google.android.apps.photos"|g'
-            $APKTOOL b -q "$tmp_dir" -o "$2"
-            rm -rf "$tmp_dir"
-            split --bytes=20M -d "$2" "$2".part
+            tmp_dir=${MY_DIR}/.tmp
+            apktool d -o $tmp_dir -r -f "${2}"
+            for p in ${MY_DIR}/patches/*; do
+                patch -p1 -d $tmp_dir < $p
+            done
+            apktool b $tmp_dir -o "${2}"
+            rm -rf $tmp_dir
             ;;
     esac
 }

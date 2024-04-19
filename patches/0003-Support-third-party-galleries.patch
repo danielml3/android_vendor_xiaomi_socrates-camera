@@ -1,0 +1,54 @@
+From c636c2a0a20a8161c0f8ab241ada6a81ca5dcc0c Mon Sep 17 00:00:00 2001
+From: Arian <arian.kulmer@web.de>
+Date: Fri, 19 Apr 2024 17:46:14 +0200
+Subject: [PATCH 3/3] Support third party galleries
+
+Change-Id: Ie1591bd6939610f300ba3245e7a5c8f57ccb2253
+---
+ smali/d/d/a/q4.smali                                |  5 -----
+ .../provider/ParallelProcessProvider.smali          | 13 -------------
+ 2 files changed, 18 deletions(-)
+
+diff --git a/smali/d/d/a/q4.smali b/smali/d/d/a/q4.smali
+index e8843537..9025efdd 100644
+--- a/smali/d/d/a/q4.smali
++++ b/smali/d/d/a/q4.smali
+@@ -1135,11 +1135,6 @@
+     invoke-direct {p0, v0, p2}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
+ 
+     :goto_0
+-    const-string p1, "com.miui.gallery"
+-
+-    .line 12
+-    invoke-virtual {p0, p1}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
+-
+     const/4 p1, 0x1
+ 
+     const-string p2, "from_MiuiCamera"
+diff --git a/smali_classes4/com/xiaomi/camera/parallelservice/provider/ParallelProcessProvider.smali b/smali_classes4/com/xiaomi/camera/parallelservice/provider/ParallelProcessProvider.smali
+index 186a0f5b..a9cb1aa6 100644
+--- a/smali_classes4/com/xiaomi/camera/parallelservice/provider/ParallelProcessProvider.smali
++++ b/smali_classes4/com/xiaomi/camera/parallelservice/provider/ParallelProcessProvider.smali
+@@ -790,19 +790,6 @@
+     .line 6
+     invoke-static {v0, v3, v2}, Lcom/android/camera/log/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+ 
+-    .line 7
+-    invoke-static {}, Ld/k/a/b;->j2()Ld/k/a/b;
+-
+-    move-result-object v0
+-
+-    invoke-virtual {v0}, Ld/k/a/b;->v2()Z
+-
+-    move-result v0
+-
+-    if-nez v0, :cond_0
+-
+-    const/4 v1, 0x4
+-
+     :cond_0
+     :goto_0
+     return v1
+-- 
+2.34.1
+

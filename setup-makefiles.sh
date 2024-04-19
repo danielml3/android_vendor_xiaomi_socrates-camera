@@ -8,8 +8,8 @@
 
 set -e
 
-DEVICE=camera
-DEVICE_COMMON=camera
+DEVICE=socrates-camera
+DEVICE_COMMON=socrates-camera
 VENDOR=xiaomi
 
 # Load extract_utils and do some sanity checks
@@ -29,7 +29,7 @@ source "${HELPER}"
 setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" true
 
 # Warning headers and guards
-write_headers "fuxi"
+write_headers "socrates"
 sed -i 's|device/|vendor/|g' "$ANDROIDBP" "$ANDROIDMK" "$BOARDMK" "$PRODUCTMK"
 
 cat << 'EOF' >> "$ANDROIDMK"
