@@ -1,4 +1,4 @@
-From 153cafa07ac61772fb0f0c7d7e425df84cb32fc7 Mon Sep 17 00:00:00 2001
+From 3f4496b7bff8cd99bdd40e4b0e82c65753794920 Mon Sep 17 00:00:00 2001
 From: Arian <arian.kulmer@web.de>
 Date: Fri, 19 Apr 2024 17:41:54 +0200
 Subject: [PATCH 2/3] ICustomCaptureResult: Add readout timestamp
@@ -77,5 +77,5 @@ index 6406b1ed..14a9c706 100644
      invoke-virtual {v8, v1}, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
  
 -- 
-2.34.1
+2.39.5
 

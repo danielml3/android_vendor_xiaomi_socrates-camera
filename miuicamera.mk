@@ -24,4 +24,4 @@ TARGET_SYSTEM_PROP += vendor/xiaomi/socrates-camera/configs/properties/system.pr
 BOARD_VENDOR_SEPOLICY_DIRS += \
     vendor/xiaomi/socrates-camera/sepolicy/vendor
 
-$(call inherit-product, vendor/xiaomi/socrates-camera/camera-vendor.mk)
+$(call inherit-product, vendor/xiaomi/socrates-camera/socrates-camera-vendor.mk)
