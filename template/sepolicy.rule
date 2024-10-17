@@ -1,0 +1,12 @@
+allow priv_app app_data_file file { execute }
+allow priv_app vendor_hal_camerapostproc_xiaomi_hwservice hwservice_manager { find }
+
+allow priv_app hal_camera_default binder { call transfer }
+allow priv_app hal_camera_default fd { use }
+
+allow hal_camera_default priv_app binder { call transfer }
+allow hal_camera_default priv_app fd { use }
+
+allow priv_app vendor_camera_prop file { getattr open read map }
+allow priv_app vendor_fp_prop file { getattr open read map }
+allow priv_app vendor_display_prop file { getattr open read map }
